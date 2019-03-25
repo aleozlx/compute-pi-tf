@@ -1,5 +1,3 @@
-import os, sys
-import numpy as np
 import tensorflow as tf
 
 N_SAMPLES = 100000000
@@ -19,4 +17,3 @@ with tf.Session(config=sess_config) as sess:
     for _ in range(STEPS):
         sess.run([pi_estimate, pi_avg_update])
     print(sess.run(pi_avg))
-
