@@ -1,0 +1,14 @@
+whitelist:
+- src: task.py
+docker:
+  image: aleozlx/playbook-tensorflow
+  runtime: nvidia
+  interactive: true
+  impersonate: dynamic
+
+num_samples: 100000000
+batch_size: 512
+
+steps:
+- name: 'Estimate pi using the "dartboard" method'
+  action: main
