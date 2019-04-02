@@ -1,7 +1,7 @@
 whitelist:
 - src: task.py
 docker:
-  image: aleozlx/playbook-tensorflow:latest
+  image: aleozlx/compute-pi-tf
   runtime: nvidia
   interactive: true
   impersonate: dynamic
